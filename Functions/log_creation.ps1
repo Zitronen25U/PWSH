@@ -14,7 +14,7 @@ function Write-TodayLogFile ($log) {
 
 <# Example
 
-Write-TodayLogFile($log + "pass") 
+Write-TodayLogFile("instert log stuff and variables here") 
 
 will print a log file with the above DTstamp and then write pass after that
 
