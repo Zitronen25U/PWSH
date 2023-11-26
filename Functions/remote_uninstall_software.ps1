@@ -24,3 +24,5 @@ $Apps = @()
 $Apps += Get-ItemProperty "HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*"
 $Apps += Get-ItemProperty "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*"
 $Apps | where {$_.displayName -like "*Excel*"} | Select DisplayName, DisplayVersion, QuietUninstallString
+
+#
