@@ -45,3 +45,2858 @@ Get-Command -Verb Get -Module PSReadLine,PowerShellGet -Syntax
 - A function can be similar to a cmdlet but rather than being written in .Net, functions are written in PWSH
 - An application is any kind of external executable including command line utilities such as ping
 
+### Aliases: Nicknames for commands
+
+
+- commands can be long
+
+```PowerShell
+Remove-AzStorageTableStoredAccessPolicy
+```
+SUCKS
+
+To get an alias for a command, use Get-Alias -Definition
+
+## Taking Shortcuts
+
+- The minimum number of letters needed to uniquely identify parameters
+- ComputerName = Comp
+- the -Common = -comm
+
+## Using parameter name aliases 
+
+- Params can also have their own name aliases 
+
+## Lab
+
+1. Get-Process
+2. Test-Connection google.com
+3. Get-Command -Typecmdlet
+4. Get-Alias 
+5. New-Alias -Name -Value
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+6. Get-Process -Name p*
+7. New-Item -Name MyFolder1 -Path c:\scripts -Type Directory
+   New-Item -Name MyFolder2 -Path c:\scripts\MyFolder1 -Type Directory
+8. Remove-Item C:\scripts\MyFolder1
+
+
