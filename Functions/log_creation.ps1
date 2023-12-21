@@ -5,7 +5,7 @@ $LogFolder = "C:\Code\<projectName>\Logs\"
 $TodayLog = $LogFolder+$Today+"_Logs.log"
 
 # For appending log file entries
-function Write-TodayLogFile ($log) {
+function Write-Log ($log) {
     filter timestamp {"$(Get-Date -Format G) - $PSItem"}
     $log | timestamp | out-file $TodayLog -append
 }
