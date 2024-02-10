@@ -78,4 +78,3 @@ function Write-TpLog {
   }
 }
 
-# This log can be called with any function. Attach this log to your funcitons to output the results.
