@@ -1,4 +1,4 @@
-function Write-TpLog {
+function Write-Log {
   <#
   .SYNOPSIS
       Creates and/or appends log file entries.
@@ -22,7 +22,6 @@ function Write-TpLog {
                  ValueFromPipelineByPropertyName=$true,
                  ValueFromRemainingArguments=$false)]
       [String]$Path,
-
       [ValidateNotNullorEmpty()]
       [String]$Message = 'No message, time stamp only.',
 
