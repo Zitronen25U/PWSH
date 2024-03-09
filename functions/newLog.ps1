@@ -5,13 +5,13 @@ function Write-Log {
   .DESCRIPTION
       Creates and/or appends log file entries in format compatible with cmtrace.
   .EXAMPLE
-      PS> Write-TpLog -Path 'C:\Code\Logs\Example.log' -Message 'Error entry' -Type Error
+      PS> Write-Log -Path 'C:\Code\Logs\Example.log' -Message 'Error entry' -Type Error
       Writes Error log entry to the Example.log file.
   .EXAMPLE
-      PS> Write-TpLog -Path 'C:\Code\Logs\Example.log'
+      PS> Write-Log -Path 'C:\Code\Logs\Example.log'
       Writes a time stamp message to the Example.log file.
   .EXAMPLE
-      PS> Write-TpLog -Path 'C:\Code\Logs\Example.log' -Message 'Information entry'
+      PS> Write-Log -Path 'C:\Code\Logs\Example.log' -Message 'Information entry'
       Writes Information log entry to the Example.log file.
   #>
   [CmdletBinding(SupportsShouldProcess,
